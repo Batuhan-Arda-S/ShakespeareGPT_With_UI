@@ -1,20 +1,18 @@
 # ShakespeareGPT: GPT-Style Language Model with Web UI
+
 ![Model](model3.png)
 
-A decoder-only GPT language model implemented entirely from scratch using PyTorch and trained on the Shakespeare dataset at the character level.
+A GPT-style decoder-only language model implemented entirely from scratch using PyTorch and trained on the Shakespeare dataset at the character level.
 
-The project recreates the core building blocks of modern autoregressive language models, including tokenization, positional embeddings, multi-head self-attention, transformer blocks, and autoregressive text generation.
+The project recreates the core building blocks of modern autoregressive language models, including character tokenization, positional embeddings, multi-head self-attention, transformer blocks, and autoregressive text generation. The trained model is integrated into a lightweight Flask web application for interactive text generation through a browser interface.
 
 ## Project Overview
 
-This project was built to gain a deep understanding of how GPT-style language models work internally by implementing the entire architecture from scratch instead of relying on high-level frameworks.
+This project was built to gain a deep understanding of GPT-style language models by implementing the complete decoder-only Transformer architecture from scratch instead of relying on high-level libraries.
 
-The model is trained using next-token prediction on Shakespeare's complete works and generates Shakespeare-style text from custom prompts.
-![Model](model4.png)
+The model is trained using next-token prediction on Shakespeare's complete works and can generate Shakespeare-style text from custom prompts through an interactive web interface.
 
-## Core AI Model
-
-The web application is powered by a decoder-only GPT-style Transformer implemented from scratch using PyTorch.
+![Web Interface](model4.png)
 
 ## Model Architecture
 
@@ -61,8 +59,8 @@ ShakespeareGPT_Scratch_With_UI/
 ├── templates/          # HTML templates
 ├── static/             # CSS, JavaScript and static assets
 │
-├── model3.png          # Project images
-├── model4.png          # Project images
+├── model3.png          # Project screenshot
+├── model4.png          # Project screenshot
 ├── .gitignore
 └── README.md
 ```
@@ -84,6 +82,10 @@ ShakespeareGPT_Scratch_With_UI/
 
 - Python
 - PyTorch
+- Flask
+- HTML
+- CSS
+- JavaScript
 - CUDA
 
 ## Features
@@ -93,7 +95,8 @@ ShakespeareGPT_Scratch_With_UI/
 - Multi-Head Self-Attention
 - Learned positional embeddings
 - Autoregressive text generation
-- Custom training pipeline
+- Complete training pipeline
 - Model checkpointing
 - GPU-accelerated training
-- Interactive inference script
+- Interactive Flask-based web interface
+- Browser-based prompt input and text generation

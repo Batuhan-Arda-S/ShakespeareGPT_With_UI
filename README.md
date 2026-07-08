@@ -1,4 +1,4 @@
-# GPT Language Model From Scratch
+# ShakespeareGPT: GPT-Style Language Model with Web UI
 ![Model](model3.png)
 
 A decoder-only GPT language model implemented entirely from scratch using PyTorch and trained on the Shakespeare dataset at the character level.
@@ -48,14 +48,22 @@ Implemented modern language model training techniques including:
 ## Project Structure
 
 ```text
-GPT-Language-Model/
+ShakespeareGPT_Scratch_With_UI/
 │
-├── dataset.py          # Dataset loading and tokenizer
-├── model.py            # GPT architecture
-├── train.py            # Training pipeline
-├── inference.py        # Text generation
-├── checkpoints/        # Saved model weights
-├── data/               # Shakespeare dataset
+├── app.py              # Flask web application
+├── dataset.py          # Dataset loading and character tokenizer
+├── inference.py        # Text generation pipeline
+├── model.py            # GPT model architecture
+├── model.pt            # Trained model weights
+├── paths.py            # Project path configuration
+├── requirements.txt    # Project dependencies
+│
+├── templates/          # HTML templates
+├── static/             # CSS, JavaScript and static assets
+│
+├── model3.png          # Project images
+├── model4.png          # Project images
+├── .gitignore
 └── README.md
 ```
 
